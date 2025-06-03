@@ -1,4 +1,4 @@
-FROM --platform=linux/arm64 debian:stable-slim
+FROM --platform=linux/arm64/v8 debian:stable-slim
 
 RUN apt -y update && apt -y upgrade && apt-get -y install nginx
 
