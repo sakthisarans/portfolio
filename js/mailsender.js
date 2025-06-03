@@ -3,7 +3,7 @@ async function send_email(name,email,subject,body){
         const response =await fetch('https://portfolio.sakthisaran.in/server/mailservice/sendemail',{method:"POST", headers: {
             'Content-Type': 'application/json'
             },
-            body:JSON.stringify({"name":name,"email":email,"subject":subject,"body":body,"to":"sakthisaransss55@gmail.com"})});
+            body:JSON.stringify({"name":name,"email":email,"subject":subject,"body":body,"to":"contact@sakthisaran.in"})});
         if(response.status==200){
         alert("I Recived Your Email i'll Contact you Soon")
         resetForm();
